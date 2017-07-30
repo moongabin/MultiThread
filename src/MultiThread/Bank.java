@@ -14,13 +14,13 @@ public class Bank extends Thread{
 	                int money = (int)(Math.random() * 3 + 1) *100;
 	                if(obj.balance >= money)
 	                {
-	                    System.out.println(getName() + " : 원본의 balance : " + obj.balance);
-	                    System.out.println(getName() + ": 찾는 금액 : " + money);
+	                    System.out.println(getName() + " : 원본의 balance : " + obj.balance+"\n");
+	                    System.out.println(getName() + ": 찾는 금액 : " + money+"\n");
 	                    obj.withdraw(money);
-	                    System.out.println(getName() + " : 수정된 balance : " + obj.balance);
+	                    System.out.println(getName() + " : 수정된 balance : " + obj.balance+"\n");
 	                }else
 	                {
-	                    System.out.println("잔액 부족");
+	                    System.out.println("잔액 부족\n");
 	                    break;
 	                }
 	            }

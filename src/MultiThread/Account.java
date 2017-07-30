@@ -12,6 +12,7 @@ public class Account {
 	                Thread.sleep(1000);
 	            }catch(Exception e) { }
 	                balance -= money;
+	                
 	        }
 	    }
 
